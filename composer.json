@@ -1,0 +1,15 @@
+{
+    "name": "dinya/test2",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denis Nikitin",
+            "email": "dinya.nikitin@gmail.com"
+        }
+    ],
+    "require": {}
+}
