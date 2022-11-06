@@ -14,12 +14,14 @@ abstract class Special
     protected string $profession;
     protected int $age;
     protected string $themeCreator;
+    protected bool $webinar;
+    protected string $subordinates;
     public static int $counter = 0;
 
     public static int $priceFull = 0;
 
 
-    public function __construct(string $name, string $surname, int $price, string $profession, int $age, string $themeCreator)
+    public function __construct(string $name, string $surname, int $price, string $profession, int $age, string $themeCreator, bool $webinar, string $subordinates)
     {
         $this->name = $name;
         $this->surname = $surname;
@@ -27,8 +29,10 @@ abstract class Special
         $this->profession = $profession;
         $this->age = $age;
         $this->themeCreator = $themeCreator;
+        $this->subordinates = $subordinates;
         self::$counter++;
         self::$priceFull += $price;
+        $this->webinar = $webinar;
     }
     abstract  public function getFullName(): string;
 

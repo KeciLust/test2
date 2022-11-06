@@ -13,7 +13,7 @@ class Worker extends Special implements ApplicationCreatorInterface
 {
     public function getFullName():string
     {
-        return $this->surname ." ". $this->name;
+        return "Специалист : " . $this->surname ." ". $this->name;
     }
     public function getApplicationCreatorInterface():string
     { 

@@ -1,4 +1,6 @@
 <?php 
+
+namespace InterfaceFun;
 interface WebinarSpeakerInterface {
-    public function getWebinarSpeakerInterface (string $themeWebinar): string;
+    public function getWebinarSpeakerInterface (): string;
 }
