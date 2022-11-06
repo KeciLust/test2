@@ -20,5 +20,6 @@ class Worker extends Special implements ApplicationCreatorInterface
         if($this->themeCreator) {
             return "Может заниматься разработкой на языке: " .$this->themeCreator;
         }
+        return "";
     }
 }
